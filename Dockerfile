@@ -9,6 +9,7 @@ COPY ./routes/ /app/routes/
 COPY ./main.go /app/main.go
 COPY ./go.mod /app/go.mod
 COPY ./go.sum /app/go.sum
+COPY ./main_test.go /app
 
 RUN go build main.go
 
